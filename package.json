@@ -1,16 +1,21 @@
 {
+  "homepage": "http://m4manowwar.github.io/load-combination",
   "name": "load-combination",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
+    "gh-pages": "^6.3.0",
+    "github-pages": "^3.0.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwindcss": "^4.1.13"
